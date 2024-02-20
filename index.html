@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Rank</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script src="assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="/assets/icons/Logo.svg" alt="" class="logo" />
+    </header>
+    <div class="container__wrapper">
+      <div class="container">
+        <div class="container__header">
+          <div class="heading-md-semibold">Found 234 countries</div>
+          <div class="search__wrapper">
+            <img src="/assets/icons/Search.svg" alt="" class="search__icon" />
+            <input
+              type="text"
+              class="search body-nl-bold"
+              placeholder="Search by Name, Region, Subregion"
+            />
+          </div>
+        </div>
+
+        <div class="container__display">
+          <div class="container__filters">
+            <div class="sort_by_container">
+              <label class="body-sm-bold -w">Sort by</label>
+              <select id="" name="cars" class="body-nl-bold">
+                <option class="sortFilter" value="population">
+                  Population
+                </option>
+                <option class="sortFilter" value="area">Area</option>
+                <option class="sortFilter" value="name">Name</option>
+              </select>
+            </div>
+            <div class="region__wrapper">
+              <div class="body-sm-bold -w">Region</div>
+              <div class="region__container">
+                <div class="region body-nl-bold">Americas</div>
+                <div class="region body-nl-bold">Antarctic</div>
+                <div class="region body-nl-bold">Africa</div>
+                <div class="region body-nl-bold">Asia</div>
+                <div class="region body-nl-bold">Europe</div>
+                <div class="region body-nl-bold">Oceania</div>
+              </div>
+            </div>
+
+            <div class="status_wrapper">
+              <div class="body-sm-bold -w">Status</div>
+              <div class="status">
+                <input class="status__checkbox" type="checkbox" name="member" id="member" />
+                <label class="body-nl-bold" for="member">Member of the United Nations</label>
+              </div>
+              <div class="status">
+                <input class="status__checkbox" type="checkbox" name="independent" id="independent" />
+                <label class="body-nl-bold" for="independent">Independent</label>
+              </div>
+            </div>
+          </div>
+          <div class="container__results">
+            <div class="container__table__header">
+              <div class="body-sm-bold -w">Flag</div>
+              <div class="body-sm-bold -w">Name</div>
+              <div class="body-sm-bold -w">Population</div>
+              <div class="body-sm-bold -w">Area(Km<sup>2</sup>)</div>
+              <div class="body-sm-bold -w">Region</div>
+
+
+            </div>
+            <div class="container__table">
+              <div class="container__table__row">
+                <div class="country__flag">
+                  <img src="https://flagcdn.com/es.svg" alt="" class="flag__img">
+                </div>
+                <div class="country__name body-nl-bold -w tb">spain</div>
+                <div class="country__population body-nl-bold -w tb">47351567</div>
+                <div class="country__area body-nl-bold -w tb">505992</div>
+                <div class="country__region body-nl-bold -w tb">Europe</div>
+              </div>
+              
+
+            </div>
+            
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
